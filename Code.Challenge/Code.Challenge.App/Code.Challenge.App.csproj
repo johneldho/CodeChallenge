@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Code.Challenge.DataLayer\Code.Challenge.DataLayer.csproj" />
+    <ProjectReference Include="..\Code.Challenge.LogicLayer\Code.Challenge.LogicLayer.csproj" />
+  </ItemGroup>
+
 </Project>
