@@ -1,0 +1,13 @@
+﻿{
+  "AppSettings": {
+
+    "FilePath": "C:\\InputFolder\\"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Debug",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  }
+}
