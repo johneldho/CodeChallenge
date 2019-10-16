@@ -75,33 +75,7 @@ namespace Code.Challenge.UnitTest
         }
 
 
-        [Fact]
-        public void HorseDataMapperCaulfield_Horse_Mapper_IsNull_Test()
-        {
-            var config = new MapperConfiguration(opts => { opts.AddProfile(new RaceDataMapper()); });
-            var mapper = config.CreateMapper();
-
-
-            var source = new CaulfieldRaceDataSource()
-            {
-                Meeting = new Meeting()
-                {
-                    Races = new Races()
-                    {
-                        Race = new Race()
-                        {
-
-                            
-
-                        }
-                    }
-                }
-            };
-
-            var houseList = mapper.Map<List<Horse>>(source.Meeting.Races.Race.Horses.Horse);
-            Assert.Null(houseList);
-            
-        }
+   
 
         [Fact]
         public void HorseDataMapperCaulfield_Mapper_Test()
@@ -213,6 +187,8 @@ namespace Code.Challenge.UnitTest
             Assert.NotNull(houseList);
             Assert.Equal( 2.2f, houseList.First()?.Price);
         }
+
+       
 
     }
 }

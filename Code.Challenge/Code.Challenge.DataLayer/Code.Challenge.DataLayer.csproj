@@ -8,4 +8,13 @@
     <PackageReference Include="AutoMapper" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Feeds\Caulfield_Race1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Feeds\Wolferhampton_Race1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
