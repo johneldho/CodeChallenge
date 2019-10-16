@@ -1,10 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
+ 
+using Code.Challenge.DataLayer.DTO;
 
 namespace Code.Challenge.LogicLayer.Interface
 {
-    class IHorseManagerLL
+    public interface IHorseManagerLL
     {
+        List<Horse> GetHorseDetails();
     }
 }
