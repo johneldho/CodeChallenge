@@ -10,9 +10,27 @@ namespace Code.Challenge.LogicLayer.FileProcessor
     public class CaulfieldRaceFileProcessor:IRaceFileProcessor
     {
          
-        public Task<List<Horse>> Process(string raceFileName)
+        public async Task<List<Horse>> Process(string raceFileName)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                // process the file
+
+                // logic for processing the file goes here
+
+                // process the file
+
+                //var racesourcedata = new CaulfieldRaceDataSource();
+                //var raceData = _mapper.Map<List<Horse>>(racesourcedata);
+
+                return null;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
     }
    

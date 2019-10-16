@@ -30,10 +30,10 @@ namespace Code.Challenge.App
                 {
                     var horseService = servicesProvider.GetService<IHorseDetails>();
                     var horseData = horseService.GetHorseDetails().Result;
-
+                    Console.WriteLine("Horse Name and Price in ascending order");
                     foreach (var horse in horseData)
                     {
-                        Console.WriteLine("HorseName : " + horse.HorseName + " Price :" + horse.Price);
+                        Console.WriteLine("HorseName : " + horse.HorseName + "    Price :" + horse.Price);
                     }
 
                     Console.WriteLine("Press ANY key to exit");
@@ -60,7 +60,7 @@ namespace Code.Challenge.App
             var mapper = mappingConfig.CreateMapper();
 
             var serviceCollection = new ServiceCollection();
-
+            serviceCollection.AddTransient<IHorseDetails, HorseDetails>();
             serviceCollection.AddTransient<IHorseManagerLL, HorseManagerLL>();
             serviceCollection.AddSingleton(mapper);
             RegisterFileProcessor(serviceCollection);
